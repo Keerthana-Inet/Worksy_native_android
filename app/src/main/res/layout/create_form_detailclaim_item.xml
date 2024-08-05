@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+
+        <variable
+            name="claimProgressList"
+            type="com.worksy.hr.art.models.claimRequestResponse.AddItemRequest.PendingItem.Item" />
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/_5sdp"
+        android:id="@+id/secondary_headerlyt"
+        android:background="@drawable/background_border"
+        android:layout_height="wrap_content">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lyt_recycler"
+            android:padding="@dimen/_2sdp"
+            android:layout_margin="@dimen/_3sdp"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <CheckBox
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_30sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                android:visibility="gone"
+                app:layout_constraintTop_toTopOf="parent"
+                android:id="@+id/checkbox"/>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="@dimen/_170sdp"
+                android:layout_margin="@dimen/_2sdp"
+                android:maxLines="2"
+                android:paddingLeft="@dimen/_3sdp"
+                android:textSize="@dimen/_12sdp"
+                android:id="@+id/user_name"
+                android:textColor="@color/text_color"
+                app:fontFamily="@font/inter_semibold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_height="wrap_content"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_margin="@dimen/_2sdp"
+                android:padding="@dimen/_2sdp"
+                android:id="@+id/rm_value"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@color/text_color"
+                app:fontFamily="@font/inter_semibold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_height="wrap_content"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="@dimen/_2sdp"
+                android:paddingLeft="@dimen/_3sdp"
+                android:id="@+id/date_txt"
+                android:textSize="@dimen/_11sdp"
+                android:textColor="@color/text_color"
+                app:fontFamily="@font/inter_regular"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/user_name"
+                android:layout_height="wrap_content"/>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:paddingRight="@dimen/_8sdp"
+                android:layout_marginRight="@dimen/_2sdp"
+                android:background="@drawable/background_border"
+                android:backgroundTint="@color/thin_red"
+                android:id="@+id/tag"
+                android:paddingLeft="@dimen/_8sdp"
+                android:textSize="@dimen/_11sdp"
+                android:textColor="@color/red"
+                app:fontFamily="@font/inter_semibold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rm_value"
+                android:layout_height="wrap_content"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <View
+            android:layout_width="match_parent"
+            app:layout_constraintTop_toBottomOf="@+id/lyt_recycler"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:id="@+id/view1"
+            android:background="@color/thin_gray"
+            android:layout_height="@dimen/_1sdp"/>
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="@dimen/_200sdp"
+            android:id="@+id/image1"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:scaleType="fitCenter"
+            android:foregroundGravity="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view1"
+            android:layout_height="@dimen/_100sdp"/>
+        <View
+            android:layout_width="match_parent"
+            app:layout_constraintTop_toBottomOf="@+id/image1"
+            android:id="@+id/view2"
+            android:background="@color/thin_gray"
+            android:layout_height="@dimen/_1sdp"/>
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/_12sdp"
+            android:layout_margin="@dimen/_5sdp"
+            android:id="@+id/desc"
+            app:layout_constraintTop_toBottomOf="@+id/view2"
+            android:padding="@dimen/_5sdp"
+            android:background="@drawable/claim_border"
+            app:layout_constraintStart_toStartOf="parent"
+            app:fontFamily="@font/inter_medium"
+            android:layout_height="wrap_content"/>
+        <View
+            android:layout_width="match_parent"
+            app:layout_constraintTop_toBottomOf="@+id/desc"
+            android:layout_height="@dimen/_10sdp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

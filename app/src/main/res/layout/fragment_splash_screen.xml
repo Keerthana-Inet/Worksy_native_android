@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:background="@drawable/gradient"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginBottom="@dimen/_40sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/view1"
+        android:background="@drawable/background_round_border"
+        android:id="@+id/img_layout"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/splashImage"
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            android:padding="@dimen/_10sdp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/worksy_icon" />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center"
+        android:text="@string/splash_text"
+        android:fontFamily="@font/inter_bold"
+        android:textColor="@color/splash_txt"
+        android:textSize="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_13sdp"
+        app:layout_constraintTop_toBottomOf="@+id/img_layout"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/rel_getting_ready"
+        android:background="@drawable/background_border"
+        app:layout_constraintBottom_toTopOf="@+id/view1"
+        android:layout_marginBottom="@dimen/_40sdp"
+        android:paddingRight="@dimen/_10sdp"
+        android:layout_height="@dimen/_30sdp">
+
+        <ImageView
+            android:layout_width="@dimen/_10sdp"
+            android:src="@drawable/getting_ready_icon"
+            android:layout_centerVertical="true"
+            android:id="@+id/dot_icon"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_height="@dimen/_10sdp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_toRightOf="@+id/dot_icon"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/_12sdp"
+            android:fontFamily="@font/inter_regular"
+            android:textColor="@color/light_black_txt"
+            android:text="@string/getting_ready"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+    <View
+        android:layout_width="@dimen/_110sdp"
+        android:id="@+id/view1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/background_border"
+        android:backgroundTint="@color/black"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_height="@dimen/_4sdp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

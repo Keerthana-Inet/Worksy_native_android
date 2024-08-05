@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/transparent"/>
+        </shape>
+    </item>
+    <item>
+        <inset android:insetRight="8dp">
+            <bitmap android:gravity="center_vertical|end"
+                android:src="@drawable/ic_dropdown" />
+        </inset>
+    </item>
+</layer-list>

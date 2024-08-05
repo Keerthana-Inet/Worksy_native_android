@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="claimItem"
+            type="com.worksy.hr.art.models.travelRequest.ClaimItemResponse" />
+    </data>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_10sdp">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:id="@+id/claim_lyt"
+        android:background="#F3F7FF"
+        android:padding="@dimen/_5sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textColor="#596276"
+            android:id="@+id/claim_item_txt"
+            app:fontFamily="@font/inter_regular"
+            android:textSize="@dimen/_10sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="@string/claim_item_txt"
+            android:layout_height="wrap_content"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:textColor="#1F2D40"
+            android:id="@+id/accommodation"
+            app:fontFamily="@font/inter_medium"
+            android:textSize="@dimen/_10sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/claim_item_txt"
+            android:text="@{claimItem.claimItem}"
+            android:layout_height="wrap_content"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="@dimen/_60sdp"
+            android:textColor="#1F2D40"
+            android:id="@+id/rm_value"
+            android:layout_marginRight="@dimen/_10sdp"
+            app:fontFamily="@font/inter_medium"
+            android:singleLine="false"
+            android:textSize="@dimen/_10sdp"
+            android:drawableEnd="@drawable/up_arrow"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="@{claimItem.rmValue}"
+            android:layout_height="wrap_content"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:textColor="#596276"
+            android:id="@+id/custom_field_txt"
+            app:fontFamily="@font/inter_regular"
+            android:textSize="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            app:layout_constraintTop_toBottomOf="@id/accommodation"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="@string/custom_field_txt"
+            android:layout_height="wrap_content"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:textColor="#1F2D40"
+            android:id="@+id/custom_field"
+            app:fontFamily="@font/inter_medium"
+            android:textSize="@dimen/_10sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/custom_field_txt"
+            android:text="@{claimItem.customField}"
+            android:layout_height="wrap_content"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:textColor="#596276"
+            android:id="@+id/remark_txt"
+            app:fontFamily="@font/inter_regular"
+            android:textSize="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            app:layout_constraintTop_toBottomOf="@id/custom_field"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="@string/remarks"
+            android:layout_height="wrap_content"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:textColor="#1F2D40"
+            android:id="@+id/remarks"
+            app:fontFamily="@font/inter_medium"
+            android:textSize="@dimen/_10sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/remark_txt"
+            android:text="@{claimItem.remark}"
+            android:layout_height="wrap_content"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

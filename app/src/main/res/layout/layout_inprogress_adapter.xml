@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+
+        <variable
+            name="progressList"
+            type="com.worksy.hr.art.models.travelRequest.InProgressResponse.Data" />
+    </data>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_border"
+    android:layout_margin="@dimen/_5sdp"
+    android:paddingBottom="@dimen/_8sdp"
+    android:id="@+id/header"
+    android:paddingTop="@dimen/_3sdp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:padding="@dimen/_5sdp"
+        android:id="@+id/userdetail_lyt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:text="@{progressList.trID}"
+            android:id="@+id/tr_id"
+            android:textSize="@dimen/_10sdp"
+            android:textColor="@color/white"
+            android:paddingLeft="@dimen/_10sdp"
+            android:paddingRight="@dimen/_10sdp"
+            android:paddingTop="@dimen/_3sdp"
+            android:paddingBottom="@dimen/_3sdp"
+            android:fontFamily="@font/inter_medium"
+            android:background="@drawable/blue_background_border"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_height="wrap_content"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:text="@{progressList.trType}"
+            android:textSize="@dimen/_10sdp"
+            android:textColor="@color/button_txt"
+            android:paddingLeft="@dimen/_10sdp"
+            android:id="@+id/trType"
+            android:paddingRight="@dimen/_10sdp"
+            android:paddingTop="@dimen/_3sdp"
+            android:paddingBottom="@dimen/_3sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:fontFamily="@font/inter_medium"
+            android:background="@drawable/blue_background_border"
+            android:backgroundTint="@color/thin_blue"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tr_id"
+            android:layout_height="wrap_content"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:padding="@dimen/_1sdp"
+            android:id="@+id/title_txt"
+            android:textSize="@dimen/_11sdp"
+            android:text="@{progressList.titletxt}"
+            android:fontFamily="@font/inter_semibold"
+            app:layout_constraintTop_toBottomOf="@+id/trType"
+            android:layout_height="wrap_content"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:padding="@dimen/_1sdp"
+            android:id="@+id/subtitle_txt"
+            android:textSize="@dimen/_10sdp"
+            android:text="@{progressList.subTitle}"
+            android:fontFamily="@font/inter_regular"
+            app:layout_constraintTop_toBottomOf="@+id/title_txt"
+            android:layout_height="wrap_content"/>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="179dp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:padding="@dimen/_3sdp"
+            android:id="@+id/type_txt"
+            android:layout_weight="1"
+            android:textColor="@color/text_gray"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/subtitle_txt"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_vertical"
+            android:textSize="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:text="@string/type_txt"
+            android:fontFamily="@font/inter_regular"
+            android:layout_height="wrap_content"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:padding="@dimen/_3sdp"
+            android:id="@+id/destination_txt"
+            android:layout_weight="1"
+            android:textSize="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:text="@string/destination_txt"
+            android:textColor="@color/text_gray"
+            app:layout_constraintStart_toEndOf="@+id/guideline_vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:fontFamily="@font/inter_regular"
+            app:layout_constraintTop_toBottomOf="@+id/subtitle_txt"
+            android:layout_height="wrap_content"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:paddingLeft="@dimen/_3sdp"
+            android:id="@+id/type"
+            android:layout_weight="1"
+            android:textColor="@color/text_dark_gray"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textSize="@dimen/_10sdp"
+            android:text="@{progressList.type}"
+            android:fontFamily="@font/inter_medium"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/type_txt"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:paddingLeft="@dimen/_3sdp"
+            android:id="@+id/destination"
+            android:textSize="@dimen/_10sdp"
+            android:text="@{progressList.destination}"
+            android:layout_weight="1"
+            app:layout_constraintStart_toEndOf="@+id/guideline_vertical"
+            android:textColor="@color/text_dark_gray"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:fontFamily="@font/inter_medium"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/destination_txt"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:padding="@dimen/_3sdp"
+            android:id="@+id/date_txt"
+            android:textColor="@color/text_gray"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/type"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_vertical"
+            android:textSize="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:text="@string/date_txt"
+            android:fontFamily="@font/inter_regular"
+            android:layout_height="wrap_content"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:padding="@dimen/_3sdp"
+            android:id="@+id/budget_txt"
+            android:layout_weight="1"
+            android:textSize="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:text="@string/budget_txt"
+            android:textColor="@color/text_gray"
+            app:layout_constraintStart_toEndOf="@+id/guideline_vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:fontFamily="@font/inter_regular"
+            app:layout_constraintTop_toBottomOf="@+id/destination"
+            android:layout_height="wrap_content"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:paddingLeft="@dimen/_3sdp"
+            android:id="@+id/date"
+            android:textColor="@color/text_dark_gray"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textSize="@dimen/_10sdp"
+            android:text="@{progressList.date}"
+            android:fontFamily="@font/inter_medium"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/date_txt"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:paddingLeft="@dimen/_3sdp"
+            android:id="@+id/budget"
+            android:textSize="@dimen/_10sdp"
+            android:layout_weight="1"
+            android:text="@{progressList.budget}"
+            app:layout_constraintStart_toEndOf="@+id/guideline_vertical"
+            android:textColor="@color/text_dark_gray"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:fontFamily="@font/inter_medium"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/budget_txt"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@color/thin_gray"
+        android:id="@+id/view1"
+        app:layout_constraintTop_toBottomOf="@+id/userdetail_lyt"
+        android:layout_height="@dimen/_1sdp"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:drawablePadding="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:paddingRight="@dimen/_8sdp"
+        android:paddingLeft="@dimen/_5sdp"
+        android:id="@+id/stage"
+        android:paddingTop="@dimen/_2sdp"
+        android:paddingBottom="@dimen/_2sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view1"
+        android:layout_centerVertical="true"
+        android:textSize="@dimen/_11sdp"
+        android:fontFamily="@font/inter_medium"
+        android:textColor="#2E5DA0"
+        android:text="@{progressList.stage}"
+        android:layout_marginLeft="@dimen/_3sdp"
+        android:layout_height="wrap_content"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:drawablePadding="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:paddingRight="@dimen/_8sdp"
+            android:paddingLeft="@dimen/_5sdp"
+            android:id="@+id/status"
+            android:paddingTop="@dimen/_2sdp"
+            android:paddingBottom="@dimen/_2sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view1"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/_10sdp"
+            android:fontFamily="@font/inter_medium"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_height="wrap_content"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

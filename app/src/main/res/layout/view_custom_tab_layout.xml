@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_curve_border">
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:tabIndicator="@drawable/tab_unselectedcolor"
+        app:tabIndicatorColor="@null"
+        app:tabIndicatorHeight="@dimen/_2sdp"
+        app:tabMaxWidth="0dp"
+        app:tabPaddingEnd="6dp"
+        app:tabPaddingStart="4dp"
+        app:tabSelectedTextColor="#2E5DA0"
+        app:tabTextAppearance="@style/tab_text"
+        app:tabTextColor="@color/black" >
+    </com.google.android.material.tabs.TabLayout>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textColor="#596276"
+        android:textSize="@dimen/_12sdp"
+        android:id="@+id/hand_txt"
+        app:fontFamily="@font/inter_regular"
+        android:drawableStart="@drawable/hand"
+        android:padding="@dimen/_5sdp"
+        android:visibility="gone"
+        android:drawablePadding="@dimen/_10sdp"
+        android:text="@string/press_and_hold_to_select_multiple_item"
+        app:layout_constraintTop_toBottomOf="@+id/tabLayout"
+        android:layout_height="wrap_content"/>
+    <androidx.viewpager2.widget.ViewPager2
+        android:layout_width="match_parent"
+        android:id="@+id/viewPager"
+        android:layout_marginTop="@dimen/_5sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hand_txt"
+        android:layout_height="wrap_content"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</merge>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".views.fragments.resetpassword.OtpVerifyFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/actionbar_lyt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="@dimen/_10sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/secondary_lyt"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="@dimen/_35sdp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_height="@dimen/_35sdp"
+            android:id="@+id/back_arrow"
+            android:padding="@dimen/_3sdp"
+            android:layout_margin="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:src="@drawable/left_arrow"/>
+        <TextView
+            android:layout_width="match_parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/back_arrow"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:id="@+id/title"
+            android:fontFamily="@font/inter_semibold"
+            android:text="@string/otp_title"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/title"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:textColor="@color/white"
+            android:textSize="11sp"
+            android:minLines="3"
+            android:id="@+id/subtitle"
+            android:fontFamily="@font/inter_regular"
+            android:text="@string/otp_subtitle"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="@dimen/_130sdp"
+        android:id="@+id/secondary_lyt"
+        android:background="@drawable/background_curve_border"
+        app:layout_constraintTop_toTopOf="@+id/actionbar_lyt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_height="match_parent">
+
+
+        <com.chaos.view.PinView
+            android:id="@+id/pinview"
+            style="@style/PinWidget.PinView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginTop="32dp"
+            android:clickable="true"
+            android:cursorVisible="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:hint="0"
+            android:inputType="number"
+            android:textColorHint="@color/light_gray"
+            app:itemCount="6"
+            app:itemSpacing="3dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:lineColor="@color/thin_gray"
+            app:viewType="rectangle" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:text="@string/didnt_receive_an_email_txt"
+            android:id="@+id/text1"
+            android:gravity="center"
+            android:textColor="@color/light_gray"
+            android:textSize="13sp"
+            android:textAllCaps="false"
+            android:fontFamily="@font/inter_medium"
+            android:layout_marginTop="@dimen/_50sdp"
+            app:layout_constraintTop_toBottomOf="@+id/pinview"
+            android:layout_height="@dimen/_35sdp"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:text="@string/resend_code_txt"
+            android:id="@+id/text2"
+            android:gravity="center"
+            android:textColor="@color/light_gray"
+            android:textSize="14sp"
+            android:textAllCaps="false"
+            android:padding="@dimen/_4sdp"
+            android:fontFamily="@font/inter_medium"
+            app:layout_constraintTop_toBottomOf="@+id/text1"
+            android:layout_height="wrap_content"/>
+        <View
+            android:layout_width="@dimen/_110sdp"
+            android:id="@+id/view1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:background="@drawable/background_border"
+            android:backgroundTint="@color/black"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_height="@dimen/_4sdp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".views.fragments.menu.MenuFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/actionbar_lyt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="@dimen/_5sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/nested_scroll"
+        android:layout_marginLeft="@dimen/_7sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="@dimen/_30sdp"
+            android:src="@drawable/back_arrow"
+            android:id="@+id/back_img"
+            android:padding="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_height="@dimen/_33sdp"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            app:layout_constraintStart_toEndOf="@+id/back_img"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_15sdp"
+            android:id="@+id/title"
+            android:fontFamily="@font/inter_semibold"
+            android:text="Main Menu"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:textColor="@color/button_txt"
+            app:fontFamily="@font/inter_semibold"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textSize="@dimen/_12sdp"
+            android:visibility="gone"
+            android:paddingLeft="@dimen/_15sdp"
+            android:paddingRight="@dimen/_15sdp"
+            android:drawableStart="@drawable/summary_icon"
+            android:drawablePadding="@dimen/_8sdp"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_5sdp"
+            android:background="@drawable/rounded_bottom_corners"
+            android:backgroundTint="#E7F1FF"
+            android:id="@+id/summary_txt"
+            android:fontFamily="@font/inter_semibold"
+            android:text="@string/summary_txt"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:id="@+id/nested_scroll"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:scrollbars="none"
+        android:background="@drawable/background_curve_border"
+        app:layout_constraintTop_toBottomOf="@+id/actionbar_lyt"
+        android:layout_height="0dp">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/secondary_lyt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="4dp"
+            app:layout_constraintTop_toBottomOf="@+id/actionbar_lyt">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:padding="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_height="wrap_content">
+
+           <androidx.constraintlayout.widget.ConstraintLayout
+               android:layout_width="@dimen/_80sdp"
+               app:layout_constraintTop_toTopOf="parent"
+               app:layout_constraintStart_toStartOf="parent"
+               android:layout_height="wrap_content">
+
+               <androidx.appcompat.widget.AppCompatImageView
+                   android:layout_width="wrap_content"
+                   android:src="@drawable/core_img"
+                   android:id="@+id/core_img_btn"
+                   app:layout_constraintTop_toTopOf="parent"
+                   app:layout_constraintStart_toStartOf="parent"
+                   android:layout_height="wrap_content"/>
+
+               <androidx.appcompat.widget.AppCompatImageView
+                   android:layout_width="wrap_content"
+                   android:src="@drawable/leave_img"
+                   android:id="@+id/leave_img_btn"
+                   android:layout_marginTop="@dimen/_10sdp"
+                   app:layout_constraintTop_toBottomOf="@+id/core_img_btn"
+                   app:layout_constraintStart_toStartOf="parent"
+                   android:layout_height="wrap_content"/>
+
+               <androidx.appcompat.widget.AppCompatImageView
+                   android:layout_width="wrap_content"
+                   android:src="@drawable/attendance_img"
+                   android:id="@+id/attendance_img_btn"
+                   android:layout_marginTop="@dimen/_10sdp"
+                   app:layout_constraintTop_toBottomOf="@+id/leave_img_btn"
+                   app:layout_constraintStart_toStartOf="parent"
+                   android:layout_height="wrap_content"/>
+
+               <androidx.appcompat.widget.AppCompatImageView
+                   android:layout_width="wrap_content"
+                   android:src="@drawable/payroll_img"
+                   android:id="@+id/payroll_img_btn"
+                   android:layout_marginTop="@dimen/_10sdp"
+                   app:layout_constraintTop_toBottomOf="@+id/attendance_img_btn"
+                   app:layout_constraintStart_toStartOf="parent"
+                   android:layout_height="wrap_content"/>
+           </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <View
+                    android:layout_width="0.7dp"
+                    android:background="@color/thin_gray"
+                    android:layout_height="@dimen/_300sdp"/>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_height="wrap_content">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/_5sdp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:text="Core"
+                        android:id="@+id/core_txt"
+                        android:fontFamily="@font/inter_bold"
+                        android:textSize="@dimen/_16sdp"
+                        android:textColor="@color/button_txt"
+                        android:drawableStart="@drawable/ic_core"/>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:paddingTop="@dimen/_15sdp"
+                        android:paddingBottom="@dimen/_15sdp"
+                        android:background="@drawable/bg_edit_text"
+                        android:paddingRight="@dimen/_10sdp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/core_txt"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:text="Profile"
+                        android:id="@+id/profile_txt"
+                        android:fontFamily="@font/inter_medium"
+                        android:textSize="@dimen/_13sdp"
+                        android:textColor="@color/light_black_txt"
+                        android:drawableStart="@drawable/ic_profile"/>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:paddingTop="@dimen/_15sdp"
+                        android:paddingBottom="@dimen/_15sdp"
+                        android:background="@drawable/bg_edit_text"
+                        android:paddingRight="@dimen/_10sdp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/profile_txt"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:text="My Request"
+                        android:id="@+id/myrequest_txt"
+                        android:fontFamily="@font/inter_medium"
+                        android:textSize="@dimen/_13sdp"
+                        android:textColor="@color/light_black_txt"
+                        android:drawableStart="@drawable/ic_request"/>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:paddingTop="@dimen/_15sdp"
+                        android:paddingBottom="@dimen/_15sdp"
+                        android:background="@drawable/bg_edit_text"
+                        android:paddingRight="@dimen/_10sdp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/myrequest_txt"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:text="My Approval"
+                        android:id="@+id/myapproval_txt"
+                        android:fontFamily="@font/inter_medium"
+                        android:textSize="@dimen/_13sdp"
+                        android:textColor="@color/light_black_txt"
+                        android:drawableStart="@drawable/ic_approval"/>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:paddingTop="@dimen/_15sdp"
+                        android:paddingBottom="@dimen/_15sdp"
+                        android:background="@drawable/bg_edit_text"
+                        android:paddingRight="@dimen/_10sdp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/myapproval_txt"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:text="Loguot"
+                        android:id="@+id/logout"
+                        android:fontFamily="@font/inter_medium"
+                        android:textSize="@dimen/_13sdp"
+                        android:textColor="@color/light_black_txt"
+                        android:drawableStart="@drawable/ic_logout"/>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

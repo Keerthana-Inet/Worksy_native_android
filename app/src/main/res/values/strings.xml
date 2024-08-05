@@ -1,0 +1,293 @@
+<resources>
+    <!-- onboard-->
+    <string name="app_name">WorksyHr</string>
+    <string name="splash_text">WorksyHR</string>
+    <string name="getting_ready">Getting Ready...   </string>
+    <string name="lets_get_started_btn"> Let\'s Get Started </string>
+    <string name="welcome_to_worksyhr_text">Welcome to \n WorksyHR</string>
+    <string name="dont_have_account_text">Don’t have an account? Register</string>
+
+    <!-- Lets get started-->
+    <string name="choose_your_preferred_login_method_txt">Choose your preferred login method.</string>
+    <string name="login_with_company_id">Log in with Company ID</string>
+    <string name="login_with_email">Log in with Email</string>
+    <string name="login_with_mobile_number">Log in with Mobile Number</string>
+    <string name="or_login_with">or login with</string>
+
+    <!--login screen-->
+    <string name="company_id">Company ID</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="enter_your_company_id">Enter your company id</string>
+    <string name="enter_your_username">Enter your Username</string>
+    <string name="enter_your_password">Enter your password</string>
+    <string name="remember_me">Remember me</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="login">Login</string>
+    <string name="login_to_your_account">Login to your Account</string>
+    <string name="enter_your_companyid_username_to_login">Enter your company id &amp; username to login.</string>
+    <string name="email_address">Email Address</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="cancel_btn">cancel</string>
+    <string name="enter_your_mobile_number">Enter your Mobile Number</string>
+    <string name="enter_your_mobile_number_to_login">Enter your mobile number to login</string>
+    <string name="enter_your_emailaddress_to_login">Enter your email and password to login.</string>
+
+    <!--Register-->
+    <string name="create_new_account">Create a New Account</string>
+    <string name="register_page_subtitle">Please put your below to create a new account \nfor using this app.</string>
+    <string name="confirm_your_password">Confirm your password</string>
+    <string name="enter_your_emailaddress">Enter your email Address</string>
+    <string name="terms_conditions">I agree to Worksy\'s License Agreement, \n
+         Terms, &amp; Privacy Policy</string>
+    <string name="register_now_btn">Register Now</string>
+    <string name="new_password">New Password</string>
+    <string name="re_enter_your_password">Re-enter your password</string>
+
+    <!--Reset password-->
+    <string name="reset_your_password_txt">Reset your Password</string>
+    <string name="reset_passwd_subtitle">Please enter your email and we will send OTP \n code
+    in the next step to reset your password.</string>
+    <string name="send_otp_code_btn">Send OTP Code</string>
+
+    <!--otp verify-->
+    <string name="otp_title">OTP Code Verification</string>
+    <string name="otp_subtitle">We have sent an 6 digit OTP code to your email dav***ol@email.com.Enter the OTP code \nbelow to verify,</string>
+    <string name="didnt_receive_an_email_txt">Didn’t receive an email?</string>
+    <string name="resend_code_txt">You can resend code in 21 s</string>
+
+    <!--create new password-->
+    <string name="create_new_password_text">Create New Password</string>>
+    <string name="create_new_passwd_subtitle">Create your new Password. If you forget it, no \n
+    worry, you can reset again with forgot password.</string>>
+    <string name="confirm_btn">Confirm</string>
+    <string name="reset_txt">Reset Password</string>
+    <string name="passwd_successfully_changed">Password Successfully Changed!</string>
+    <string name="please_wait_txt">Please wait...</string>
+
+    <!--permission setup-->
+    <string name="back">Back</string>
+    <string name="skip">Skip</string>
+    <string name="continue_txt">Continue</string>
+    <string name="just_a_few_steps">Just a few steps away!</string>
+    <string name="just_few_steps_subtitle">To get things rolling with this app, we just need a little bit of authentication</string>
+    <string name="biometric_login_txt">Biometric Login</string>
+    <string name="biometric_desc">enable Biometric for seamless login and authentication</string>
+    <string name="camera_txt">Camera</string>
+    <string name="camera_desc">Allow worksy to use your camera.</string>
+    <string name="notification_txt">Notification</string>
+    <string name="notification_desc">Enable push notification so we can send you updates right away!</string>
+    <string name="setup_clock_device_txt">Set up Clock Device</string>
+    <string name="setup_clock_device_desc">Register this device as your clock in device to enable clock-in functionality.</string>
+    <string name="set_it_up_txt">Set it Up</string>
+    <string name="done">Done</string>
+    <string name="you_are_all_set_txt">You’re all set!</string>
+    <string name="we_hope_you_have_txt">We hope you have a great experience with worksy!</string>
+
+    <!--permission setup alert dialog-->
+    <string name="face_id_title">Do you want to allow “Worksy” to use Face ID?</string>
+    <string name="face_id_subtitle">Use Face ID to authenticate on Worksy.</string>
+    <string name="allow">Allow</string>
+    <string name="dont_allow">Don\'t Allow</string>
+
+    <!--clock device setup-->
+    <string name="title_txt">Why do i have to link my account to this device?</string>
+    <string name="time_txt">Posted on 16 Jun, 2023</string>
+    <string name="desc_txt">Linking your account enables clock-in functionality. If you choose not to link your account, you won\'t be able to clock in, but you can still access other functions and features.\n \n
+To uphold security measures, only one device can be linked to your account at a time. Once your account is linked on this device, clocking in on other devices will not be possible to ensure the security of your information.</string>
+
+    <!--company selection-->
+    <string name="company_selection_title">Company Selection</string>
+    <string name="company_selection_desc">Please select a company to continue.</string>
+    <string name="company_a">Company A</string>
+    <string name="company_b">Company B</string>
+    <string name="company_c">Company C</string>
+    <string name="company_d">Company D</string>
+    <string name="dont_ask_me_again_txt">Don’t ask me again</string>
+    <string name="set_default_company_to_login_txt">Set as default company to log in.</string>
+
+    <!--bottom navigation menu-->
+    <string name="home_menu">Home</string>
+    <string name="request_menu">Request</string>
+    <string name="approval_txt">Approval</string>
+    <string name="notification">Notification</string>
+    <string name="menu">Menu</string>
+
+    <!--travel request-->
+    <string name="travel_request">Travel Request</string>
+    <string name="search_txt">Search</string>
+    <string name="in_progress">In Progress</string>
+    <string name="completed">Completed</string>
+    <string name="press_and_hold_to_select_multiple_item">Press and hold to select multiple item.</string>
+    <string name="type_txt">Type</string>
+    <string name="destination_txt">Destination</string>
+    <string name="date_txt">Date</string>
+    <string name="budget_txt">Budget</string>
+    <string name="summary_txt">Summary</string>
+    <string name="next">Next</string>
+    <string name="save_for_later">Save for Later</string>
+    <string name="where_are_you_travelling_to">Where are you travelling to?</string>
+    <string name="location_txt">Location</string>
+    <string name="country">Country</string>
+    <string name="address_if_applicable">Address (if applicable)</string>
+    <string name="travel_details">Travel Details</string>
+    <string name="fill_details_of_travelling">Fill in the details of your travelling</string>
+    <string name="title">Title</string>
+    <string name="description">Description</string>
+    <string name="date_start">Date Start</string>
+    <string name="date_end">Date End</string>
+    <string name="duration">Duration</string>
+    <string name="reason">Reason</string>
+    <string name="are_you_travelling_alone">Are you travelling alone?</string>
+    <string name="fill_details_of_your_travel">Fill in the details of your travel.</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="additional_traveller">Additional Traveller</string>
+    <string name="select_user">Select User</string>
+    <string name="estimated_cost">Estimated Cost</string>
+    <string name="what_are_estimated_costings">What are the estimated costings?</string>
+    <string name="budget_item">Budget Item</string>
+    <string name="claim">Claim</string>
+    <string name="estimated_cost_item">Estimated Cost Item</string>
+    <string name="select_relevant_estimated_claim_item">Select the relevant estimated claim item.</string>
+    <string name="budget_amount">Budget Amount</string>
+    <string name="remarks">Remarks</string>
+    <string name="add_txt">Add</string>
+    <string name="claim_item_txt">Claim Item</string>
+    <string name="custom_field_txt">Custom Field</string>
+
+    <!--claim request listing-->
+    <string name="my_claim_txt">My Claim</string>
+    <string name="cl_id">CL-110</string>
+    <string name="monthly_entitlement_claim_txt">Monthly entitlement claim</string>
+    <string name="total_txt">Total</string>
+    <string name="form_details_txt">Form Details</string>
+    <string name="select_and_fill_details_form_in_claim">Select and fill in the details of the form you selected.</string>
+    <string name="claim_item">Claim Item</string>
+    <string name="total_claim_txt">Total Claim</string>
+    <string name="create_form_txt">Create Form</string>
+    <string name="upload_file_txt">Upload File</string>
+    <string name="choose_from_your_album">Choose from your album</string>
+    <string name="scan_qr_code_txt">Scan QR Code</string>
+    <string name="select_from_receipts">Select From Reciepts</string>
+    <string name="new_claim_item_txt">New Claim Item</string>
+    <string name="fill_details_of_claim">Fill in the details of the claim.</string>
+    <string name="claim_group">Claim Group</string>
+    <string name="amount_tax">Amount inc. Tax</string>
+    <string name="tax">Tax</string>
+    <string name="svg_png">SVG, PNG, JPG or GIF (max. 800x400px)</string>
+    <string name="add_another">Add Another</string>
+    <string name="submit_form">Submit Form</string>
+    <string name="cancel_request">Cancel Request</string>
+    <string name="edit_txt">Edit</string>
+    <string name="edit_item">Edit Claim Item</string>
+
+    <!--claim approval -->
+    <string name="claim_approval_txt">Claim Approval</string>
+
+
+    <string name="privacy_policy_text">By submitting this form you accept Send2\'s <u><font color="#5A37FD">Terms &amp; Conditions</font></u> and <u><font color="#5A37FD">Privacy Policy</font></u></string>
+    <string name="forgot_passwd"><u><font color="#5A37FD">Forgot Password?</font></u></string>
+    <string name="register"><u><font color="#5A37FD">Register</font></u> </string>
+    <string name="passwd_info">Minimum length of eight characters, at least <font><b>one uppercase</b> </font>character, at least <font><b>one lowercase</b> </font>character, at least <b>one number</b>, and at least <b>one symbol</b></string>
+    <string name="home_getmoney_txt">Get money transfer\noptions with <font color="#F5AB4E">better rates</font></string>
+    <string name="send_more_money">Send more money home with<font color="#5A37FD"> Send2</font></string>
+    <string name="email">EMAIL<font color="#A6B0BB"> (OPTIONAL)</font></string>
+    <string name="keep_track"><u><font color="#ffffff">Keep track of the latest \n exchange rates</font></u></string>
+    <string name="exchange"><u><font color="#ffffff">exchange rates</font></u></string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="filtered_by">Filtered By :</string>
+    <string name="recipient_gets">Recipient gets</string>
+    <string name="filter_by">Filter By</string>
+    <string name="reset">Reset</string>
+    <string name="transfer_type">Transfer Type</string>
+    <string name="providers">Providers</string>
+    <string name="all_providers">All providers</string>
+    <string name="trusted_partners">Trusted Partners</string>
+    <string name="location">Location</string>
+    <string name="trending">Trending</string>
+    <string name="promotions">Promotions</string>
+    <string name="apply_filters">Apply filters</string>
+    <!--    provider home page-->
+    <string name="search">Search</string>
+    <string name="enter_name_provider">Enter Name of Provider</string>
+    <string name="provider">Providers</string>
+    <string name="view_branches">View Branches</string>
+    <string name="view_details">View Details</string>
+    <string name="other_money_transfer_options">Other Money Transfer Options</string>
+    <!--    provider about page-->
+    <string name="advertisement">Advertisement</string>
+    <string name="txt_share">
+        <u>Share</u>
+    </string>
+    <string name="read_terms">Rates are volatile. Read our <u>Terms &amp; Conditions</u></string>
+    <string name="termsconditions">Terms &amp; Conditions</string>
+
+    <string name="ratings">Ratings</string>
+    <string name="rate_this_provider">Rate this provider</string>
+    <string name="reviews">Reviews</string>
+    <string name="view_all_reviews">View All Reviews</string>
+
+
+    <!--   unverfied alert-->
+    <string name="unverified_desc">Please check your email and complete the verification process</string>
+    <string name="open_Email">Open Email</string>
+    <string name="didnt_receive_resend_now">Didn\'t receive,Resend now</string>
+    <string name="no_options">No options available</string>
+    <string name="allow_notification">We would like to alert you when rates reach the points you have set based on your preferences. we will keep these to the minimum.</string>
+    <string name="something_wrong">Something went wrong, Please try again later</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="previous">Previous</string>
+
+    <string name="lorem_ipsum">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
+        volutpat, dolor id interdum ullamcorper, risus dolor egestas lectus, sit amet mattis purus
+        dui nec risus. Maecenas non sodales nisi, vel dictum dolor. Class aptent taciti sociosqu ad
+        litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse blandit eleifend
+        diam, vel rutrum tellus vulputate quis. Aliquam eget libero aliquet, imperdiet nisl a,
+        ornare ex. Sed rhoncus est ut libero porta lobortis. Fusce in dictum tellus.\n\n
+        Suspendisse interdum ornare ante. Aliquam nec cursus lorem. Morbi id magna felis. Vivamus
+        egestas, est a condimentum egestas, turpis nisl iaculis ipsum, in dictum tellus dolor sed
+        neque. Morbi tellus erat, dapibus ut sem a, iaculis tincidunt dui. Interdum et malesuada
+        fames ac ante ipsum primis in faucibus. Curabitur et eros porttitor, ultricies urna vitae,
+        molestie nibh. Phasellus at commodo eros, non aliquet metus. Sed maximus nisl nec dolor
+        bibendum, vel congue leo egestas.\n\n
+        Sed interdum tortor nibh, in sagittis risus mollis quis. Curabitur mi odio, condimentum sit
+        amet auctor at, mollis non turpis. Nullam pretium libero vestibulum, finibus orci vel,
+        molestie quam. Fusce blandit tincidunt nulla, quis sollicitudin libero facilisis et. Integer
+        interdum nunc ligula, et fermentum metus hendrerit id. Vestibulum lectus felis, dictum at
+        lacinia sit amet, tristique id quam. Cras eu consequat dui. Suspendisse sodales nunc ligula,
+        in lobortis sem porta sed. Integer id ultrices magna, in luctus elit. Sed a pellentesque
+        est.\n\n
+        Aenean nunc velit, lacinia sed dolor sed, ultrices viverra nulla. Etiam a venenatis nibh.
+        Morbi laoreet, tortor sed facilisis varius, nibh orci rhoncus nulla, id elementum leo dui
+        non lorem. Nam mollis ipsum quis auctor varius. Quisque elementum eu libero sed commodo. In
+        eros nisl, imperdiet vel imperdiet et, scelerisque a mauris. Pellentesque varius ex nunc,
+        quis imperdiet eros placerat ac. Duis finibus orci et est auctor tincidunt. Sed non viverra
+        ipsum. Nunc quis augue egestas, cursus lorem at, molestie sem. Morbi a consectetur ipsum, a
+        placerat diam. Etiam vulputate dignissim convallis. Integer faucibus mauris sit amet finibus
+        convallis.\n\n
+        Phasellus in aliquet mi. Pellentesque habitant morbi tristique senectus et netus et
+        malesuada fames ac turpis egestas. In volutpat arcu ut felis sagittis, in finibus massa
+        gravida. Pellentesque id tellus orci. Integer dictum, lorem sed efficitur ullamcorper,
+        libero justo consectetur ipsum, in mollis nisl ex sed nisl. Donec maximus ullamcorper
+        sodales. Praesent bibendum rhoncus tellus nec feugiat. In a ornare nulla. Donec rhoncus
+        libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
+        vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
+    </string>
+
+</resources>

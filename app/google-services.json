@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "268300639391",
+    "project_id": "worksyhr",
+    "storage_bucket": "worksyhr.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:268300639391:android:4c4f90fa69b5986e3c56aa",
+        "android_client_info": {
+          "package_name": "com.worksy.hr.art"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "268300639391-potmr01vub74qpgcgggggosnk9ska70o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.worksy.hr.art",
+            "certificate_hash": "8e2a99280197277bec27bef01cfd28dd240c762c"
+          }
+        },
+        {
+          "client_id": "268300639391-cfrg4ldtitr3tfio13sfvdbtn3histn8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDdup4qMTAgDSU1on8ujbgC5GgKvkr5tN4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "268300639391-cfrg4ldtitr3tfio13sfvdbtn3histn8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

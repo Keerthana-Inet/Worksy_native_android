@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="travelList"
+            type="com.worksy.hr.art.models.travelRequest.TravelRequestTab3Response.RequestData" />
+    </data>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:padding="@dimen/_3sdp"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="60sp"
+        android:padding="@dimen/_3sdp"
+        android:id="@+id/user_profile"
+        android:scaleType="fitCenter"
+        android:src="@drawable/user_profile1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_height="60sp"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="#28364D"
+        android:id="@+id/username"
+        android:textSize="@dimen/_14sdp"
+        android:fontFamily="@font/inter_semibold"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="@{travelList.username}"
+        app:layout_constraintStart_toEndOf="@+id/user_profile"
+        android:layout_height="wrap_content"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:textColor="#3F4E63"
+        android:id="@+id/designation"
+        android:textSize="@dimen/_12sdp"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:fontFamily="@font/inter_regular"
+        android:text="@{travelList.designation}"
+        app:layout_constraintTop_toBottomOf="@+id/username"
+        app:layout_constraintStart_toEndOf="@+id/user_profile"
+        android:layout_height="wrap_content"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:padding="@dimen/_3sdp"
+        android:id="@+id/minus"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:src="@drawable/minus_background"
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:padding="@dimen/_10sdp"
+        android:id="@+id/divider"
+        android:background="@color/light_gray"
+        app:layout_constraintTop_toBottomOf="@+id/designation"
+        android:layout_height="0.5dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

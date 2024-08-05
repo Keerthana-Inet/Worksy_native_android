@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="CustomRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:iconTint">@color/light_yellow</item>
+        <item name="android:minHeight">@dimen/_20sdp</item>
+        <item name="android:maxHeight">@dimen/_40sdp</item>
+
+    </style>
+</resources>

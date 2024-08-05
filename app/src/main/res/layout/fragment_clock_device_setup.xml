@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".views.fragments.permissionsetup.ClockDeviceSetupFragment">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="@dimen/_200sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/clock_device_img"
+        android:id="@+id/imgView1"
+        android:layout_height="@dimen/_150sdp"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:src="@drawable/help_icon"
+        android:id="@+id/help_icon"
+        android:padding="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_15sdp"
+        app:layout_constraintEnd_toEndOf="parent"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/setup_clock_device_txt"
+        android:padding="@dimen/_1sdp"
+        android:gravity="center"
+        android:id="@+id/title"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:textSize="@dimen/_12sdp"
+        android:fontFamily="@font/inter_semibold"
+        android:textColor="@color/black"
+        android:layout_marginBottom="@dimen/_10sdp"
+        app:layout_constraintTop_toBottomOf="@+id/imgView1"
+        android:layout_height="wrap_content"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/setup_clock_device_desc"
+        android:padding="@dimen/_2sdp"
+        android:maxLines="2"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:id="@+id/description"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:textSize="@dimen/_11sdp"
+        android:fontFamily="@font/inter_regular"
+        android:textColor="@color/light_black_txt"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:id="@+id/rel_device"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:background="@drawable/background_border"
+        android:backgroundTint="@color/thin_blue"
+        android:padding="@dimen/_2sdp"
+        app:layout_constraintTop_toBottomOf="@+id/description"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="@dimen/_50sdp"
+            android:padding="@dimen/_5sdp"
+            android:id="@+id/device_img"
+            android:layout_centerVertical="true"
+            android:src="@drawable/device_icon"
+            android:layout_height="@dimen/_50sdp"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_toRightOf="@+id/device_img"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="@dimen/_3sdp"
+            android:textSize="@dimen/_12sdp"
+            android:id="@+id/biometric_title"
+            android:fontFamily="@font/inter_medium"
+            android:text="IOS Mobile"
+            android:layout_height="wrap_content"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_toRightOf="@+id/device_img"
+            android:padding="@dimen/_1sdp"
+            android:textColor="@color/black"
+            android:layout_below="@+id/biometric_title"
+            android:layout_marginLeft="@dimen/_3sdp"
+            android:textSize="@dimen/_11sdp"
+            android:maxLines="3"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:id="@+id/biometric_desc"
+            android:fontFamily="@font/inter_semibold"
+            android:text="John's iPhone 7"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

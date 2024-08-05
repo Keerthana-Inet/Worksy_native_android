@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/_5sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".views.fragments.travelRequest.TravelRequestTab2">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/nested_scroll_view"
+        android:scrollbars="none"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:fontFamily="@font/inter_semibold"
+                android:padding="@dimen/_5sdp"
+                android:id="@+id/title_txt"
+                android:textSize="@dimen/_15sdp"
+                android:textColor="@color/text_color"
+                android:text="@string/travel_details"
+                android:layout_height="wrap_content"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="@dimen/_14sdp"
+                android:paddingLeft="@dimen/_5sdp"
+                android:id="@+id/subtitle_txt"
+                app:layout_constraintTop_toBottomOf="@+id/title_txt"
+                android:textColor="#475467"
+                android:text="@string/fill_details_of_travelling"
+                android:layout_height="wrap_content"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:background="@drawable/bg_filter"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:padding="@dimen/_3sdp"
+                android:id="@+id/rel_title"
+                app:layout_constraintTop_toBottomOf="@+id/subtitle_txt"
+                android:layout_height="wrap_content">
+
+               <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:fontFamily="@font/inter_regular"
+                    android:textSize="@dimen/_12sdp"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:id="@+id/title"
+                    android:padding="@dimen/_5sdp"
+                    android:textColor="#344054"
+                    android:text="@string/title"
+                    android:layout_height="wrap_content"/>
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:fontFamily="@font/inter_regular"
+                    android:textSize="@dimen/_13sdp"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:paddingRight="@dimen/_3sdp"
+                    android:layout_below="@+id/title"
+                    android:id="@+id/desc_txt"
+                    android:textColor="#101828"
+                    android:text="Singapore HR Tech Conference &amp; Expo 24"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:background="@drawable/bg_filter"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:padding="@dimen/_3sdp"
+                android:id="@+id/rel_desc"
+                app:layout_constraintTop_toBottomOf="@+id/rel_title"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:fontFamily="@font/inter_regular"
+                    android:textSize="@dimen/_12sdp"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:id="@+id/description_txt"
+                    android:padding="@dimen/_5sdp"
+                    android:textColor="#344054"
+                    android:text="@string/description"
+                    android:layout_height="wrap_content"/>
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:fontFamily="@font/inter_regular"
+                    android:textSize="@dimen/_13sdp"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:paddingRight="@dimen/_3sdp"
+                    android:layout_below="@+id/description_txt"
+                    android:id="@+id/sub_desc_txt"
+                    android:textColor="#101828"
+                    android:text="Business trip to SG to attend SG HR Conference &amp; Expo"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:id="@+id/date_lyt"
+                android:padding="@dimen/_3sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rel_desc"
+                android:layout_height="wrap_content">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:id="@+id/rel_date"
+                android:layout_weight="1"
+                android:background="@drawable/bg_filter"
+                  android:layout_height="wrap_content">
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:padding="@dimen/_3sdp"
+                    android:id="@+id/date_start_txt"
+                    android:layout_weight="1"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:textColor="#28364D"
+                    android:textSize="@dimen/_12sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:text="@string/date_start"
+                    android:fontFamily="@font/inter_regular"
+                    android:layout_height="wrap_content"/>
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:padding="@dimen/_3sdp"
+                    android:id="@+id/date_start"
+                    android:layout_weight="1"
+                    app:layout_constraintTop_toBottomOf="@id/date_start_txt"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:textColor="#111C33"
+                    android:textSize="@dimen/_11sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:drawableEnd="@drawable/ic_calendar"
+                    android:text="12 Jun, 2024"
+                    android:fontFamily="@font/inter_regular"
+                    android:layout_height="wrap_content"/>
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:id="@+id/rel_end_date"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_filter"
+                    android:layout_height="wrap_content">
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:padding="@dimen/_3sdp"
+                        android:id="@+id/date_end_txt"
+                        android:layout_weight="1"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:textColor="#28364D"
+                        android:textSize="@dimen/_12sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:text="@string/date_end"
+                        android:fontFamily="@font/inter_regular"
+                        android:layout_height="wrap_content"/>
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:padding="@dimen/_3sdp"
+                        android:id="@+id/date_end"
+                        android:layout_weight="1"
+                        app:layout_constraintTop_toBottomOf="@id/date_end_txt"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:textColor="#111C33"
+                        android:textSize="@dimen/_11sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:drawableEnd="@drawable/ic_calendar"
+                        android:text="12 Jun, 2024"
+                        android:fontFamily="@font/inter_regular"
+                        android:layout_height="wrap_content"/>
+
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:background="@drawable/bg_filter"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:padding="@dimen/_3sdp"
+                android:id="@+id/rel_duration"
+                app:layout_constraintTop_toBottomOf="@+id/date_lyt"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:fontFamily="@font/inter_regular"
+                    android:textSize="@dimen/_12sdp"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:id="@+id/duration_txt"
+                    android:padding="@dimen/_5sdp"
+                    android:textColor="#344054"
+                    android:text="@string/duration"
+                    android:layout_height="wrap_content"/>
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:fontFamily="@font/inter_regular"
+                    android:textSize="@dimen/_13sdp"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:paddingRight="@dimen/_3sdp"
+                    android:layout_below="@+id/duration_txt"
+                    android:id="@+id/duration"
+                    android:textColor="#101828"
+                    android:text="4 days"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:background="@drawable/bg_filter"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:padding="@dimen/_3sdp"
+                android:id="@+id/rel_reason"
+                app:layout_constraintTop_toBottomOf="@+id/rel_duration"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:fontFamily="@font/inter_regular"
+                    android:textSize="@dimen/_12sdp"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:id="@+id/reason_txt"
+                    android:padding="@dimen/_5sdp"
+                    android:textColor="#344054"
+                    android:text="@string/reason"
+                    android:layout_height="wrap_content"/>
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/reason_txt"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

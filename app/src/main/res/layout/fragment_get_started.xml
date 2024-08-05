@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:background="@drawable/gradient"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginBottom="@dimen/_40sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_lets_get_started"
+        android:background="@drawable/background_round_border"
+        android:id="@+id/img_layout"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/splashImage"
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            android:padding="@dimen/_10sdp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/worksy_icon" />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center"
+        android:minLines="2"
+        android:singleLine="false"
+        android:text="@string/welcome_to_worksyhr_text"
+        android:fontFamily="@font/inter_bold"
+        android:textColor="@color/splash_txt"
+        android:textSize="@dimen/_18sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintTop_toBottomOf="@+id/img_layout"
+        android:layout_height="wrap_content"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        app:layout_constraintBottom_toTopOf="@+id/dont_have_account_btn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/background_border"
+        android:backgroundTint="@color/button_txt"
+        android:text="@string/lets_get_started_btn"
+        android:gravity="center"
+        android:id="@+id/btn_lets_get_started"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/inter_semibold"
+        android:layout_marginLeft="@dimen/_30sdp"
+        android:layout_marginRight="@dimen/_30sdp"
+        android:layout_marginBottom="@dimen/_30sdp"
+        android:layout_height="@dimen/_35sdp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="@dimen/_30sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/dont_have_account_text"
+        android:gravity="center"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/view1"
+         app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/dont_have_account_btn"
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:layout_width="@dimen/_110sdp"
+        android:id="@+id/view1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/background_border"
+        android:backgroundTint="@color/black"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_height="@dimen/_4sdp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="totalclaimList"
+            type="com.worksy.hr.art.models.claimRequestResponse.AddClaimSettingsResponse.Data.Group" />
+    </data>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/bg_filter"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:padding="@dimen/_5sdp"
+        android:id="@+id/rel_custom_field_title"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            android:fontFamily="@font/inter_regular"
+            android:textSize="@dimen/_12sdp"
+            android:paddingLeft="@dimen/_5sdp"
+            android:id="@+id/custom_title"
+            android:padding="@dimen/_5sdp"
+            android:textColor="#344054"
+            android:text="Title"
+            android:layout_height="wrap_content"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:id="@+id/et_title"
+            android:hint=""
+            android:textSize="@dimen/_11sdp"
+            android:inputType="number"
+            android:background="@null"
+            android:layout_below="@+id/custom_title"
+            android:paddingLeft="@dimen/_5sdp"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/bg_filter"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:padding="@dimen/_5sdp"
+        android:id="@+id/rel_options"
+        app:layout_constraintTop_toBottomOf="@+id/rel_custom_field_title"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:fontFamily="@font/inter_regular"
+            android:textSize="@dimen/_12sdp"
+            android:paddingLeft="@dimen/_5sdp"
+            android:id="@+id/title"
+            android:padding="@dimen/_5sdp"
+            android:textColor="#344054"
+            android:text="Currency"
+            android:layout_height="wrap_content"/>
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:layout_width="wrap_content"
+            android:id="@+id/options_spinner"
+            android:layout_below="@+id/title"
+            android:paddingLeft="@dimen/_5sdp"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

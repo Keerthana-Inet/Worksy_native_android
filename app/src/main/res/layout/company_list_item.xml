@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="companyList"
+            type="com.worksy.hr.art.models.companies.ListCompaniesResponse.CompanyData" />
+    </data>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:padding="@dimen/_10sdp"
+        android:id="@+id/rel_company_a"
+        android:layout_marginBottom="@dimen/_5sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/bg_filter"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:src="@drawable/company_a"
+            android:id="@+id/company_a_img"
+            android:layout_height="wrap_content"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_toRightOf="@+id/company_a_img"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/company_txt"
+            android:textSize="@dimen/_13sdp"
+            android:fontFamily="@font/inter_medium"
+            android:paddingLeft="@dimen/_10sdp"
+            android:textColor="@color/button_txt"
+            android:layout_height="wrap_content"/>
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:id="@+id/cmpny_checkbox"
+            android:visibility="gone"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/check_tick"/>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

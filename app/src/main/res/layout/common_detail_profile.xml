@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/userdetail_lyt"
+        android:padding="@dimen/_1sdp"
+        android:background="@drawable/background_curve_border"
+        android:backgroundTint="@color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:scaleType="fitCenter"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:id="@+id/user_img"
+            android:src="@drawable/claim_approval_user"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_margin="@dimen/_2sdp"
+            android:padding="@dimen/_5sdp"
+            android:text="Natali Craig"
+            android:maxLines="1"
+            android:textSize="@dimen/_12sdp"
+            android:id="@+id/user_name"
+            android:textColor="@color/text_color"
+            app:fontFamily="@font/inter_semibold"
+            app:layout_constraintStart_toEndOf="@+id/user_img"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_height="wrap_content"/>
+
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:paddingLeft="@dimen/_2sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:text="Accountant"
+            android:id="@+id/user_position"
+            android:textSize="@dimen/_11sdp"
+            android:textColor="@color/text_color"
+            app:fontFamily="@font/inter_regular"
+            app:layout_constraintStart_toEndOf="@+id/user_img"
+            app:layout_constraintTop_toBottomOf="@+id/user_name"
+            android:layout_height="wrap_content"/>
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:drawablePadding="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:paddingRight="@dimen/_8sdp"
+            android:paddingLeft="@dimen/_8sdp"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_5sdp"
+            android:id="@+id/status"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:drawableStart="@drawable/getting_ready_icon"
+            android:drawableTint="@color/button_txt"
+            android:text="Pending"
+            android:background="@drawable/blue_background_border"
+            android:backgroundTint="@color/thin_blue"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:textColor="@color/button_txt"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/_10sdp"
+            android:fontFamily="@font/inter_medium"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_height="wrap_content"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/thin_gray"
+            android:layout_marginTop="@dimen/_5sdp"
+            app:layout_constraintTop_toBottomOf="@+id/user_position"
+            android:layout_height="@dimen/_1sdp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

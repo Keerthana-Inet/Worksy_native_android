@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/splash_navigation"
+    app:startDestination="@+id/splashFragment">
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.worksy.hr.art.views.fragments.splash.SplashScreenFragment"
+        tools:layout="@layout/fragment_splash_screen">
+        <!--<action
+            android:id="@+id/action_splash_to_splashgetready"
+            app:destination="@id/navi_splash_get_ready" />-->
+        <action
+            android:id="@+id/action_getstarted_to_letsgetstarted"
+            app:destination="@id/navi_lets_get_started" />
+    </fragment>
+    <fragment
+        android:id="@+id/navi_splash_get_ready"
+        android:name="com.worksy.hr.art.views.fragments.splash.SplashGetReadyFragment"
+        android:label="fragment_splash_get_ready"
+        tools:layout="@layout/fragment_splash_get_ready">
+        <action
+            android:id="@+id/action_splashgetready_to_onboard1"
+            app:destination="@id/navi_onboard1" />
+        <action
+            android:id="@+id/action_splashgetready_to_getStarted"
+            app:destination="@id/navi_get_started" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/navi_onboard1"
+        android:name="com.worksy.hr.art.views.fragments.onboard.OnBoardFragment1"
+        android:label="fragment_on_board1"
+        tools:layout="@layout/fragment_on_board1">
+
+    </fragment>
+    <fragment
+        android:id="@+id/navi_onboard2"
+        android:name="com.worksy.hr.art.views.fragments.onboard.OnBoardFragment2"
+        android:label="fragment_on_board2"
+        tools:layout="@layout/fragment_on_board2">
+
+    </fragment>
+    <fragment
+        android:id="@+id/navi_onboard3"
+        android:name="com.worksy.hr.art.views.fragments.onboard.OnBoardFragment3"
+        android:label="fragment_on_board3"
+        tools:layout="@layout/fragment_on_board3">
+
+    </fragment>
+    <fragment
+        android:id="@+id/navi_get_started"
+        android:name="com.worksy.hr.art.views.fragments.onboard.GetStartedFragment"
+        android:label="fragment_get_started"
+        tools:layout="@layout/fragment_get_started">
+        <action
+            android:id="@+id/action_getstarted_to_letsgetstarted"
+            app:destination="@id/navi_lets_get_started" />
+        <action
+            android:id="@+id/action_getstarted_to_loginwith_companyId"
+            app:destination="@id/navi_loginwith_companyId" />
+        <action
+            android:id="@+id/action_getstarted_to_loginwith_mobile_number"
+            app:destination="@id/navi_loginwith_mobile_number" />
+
+        <action
+            android:id="@+id/action_getstarted_to_loginwith_email"
+            app:destination="@id/navi_loginwith_email" />
+
+        <action
+            android:id="@+id/action_getstarted_to_register"
+            app:destination="@+id/navi_register"/>
+    </fragment>
+    <fragment
+        android:id="@+id/navi_lets_get_started"
+        android:name="com.worksy.hr.art.views.fragments.onboard.LetsGetStartedFragment"
+        android:label="fragment_lets_get_started"
+        tools:layout="@layout/fragment_lets_get_started">
+        <action
+            android:id="@+id/action_lets_get_started_to_login_qrcode"
+            app:destination="@+id/navi_qr_code_login"/>
+
+    </fragment>
+    <fragment
+        android:id="@+id/navi_qr_code_login"
+        android:name="com.worksy.hr.art.views.fragments.login.LoginQRFragment"
+        android:label="fragment_login_q_r"
+        tools:layout="@layout/fragment_login_q_r">
+        <action android:id="@+id/action_navi_login_qr_to_home_permission_setup"
+            app:destination="@+id/navi_home_permission_setup"/>
+    </fragment>
+    <fragment
+        android:id="@+id/navi_loginwith_companyId"
+        android:name="com.worksy.hr.art.views.fragments.login.LoginByCompanyID"
+        android:label="fragment_login_by_company_i_d"
+        tools:layout="@layout/fragment_login_by_company_i_d">
+
+        <action android:id="@+id/action_navi_companyloginid_to_register"
+            app:destination="@+id/navi_register"/>
+
+        <action android:id="@+id/action_navi_companyloginid_to_forgotpassword"
+            app:destination="@+id/navi_resetpassword"/>
+
+        <action android:id="@+id/action_navi_companyloginid_to_homepermissionsetup"
+            app:destination="@+id/navi_home_permission_setup"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/navi_loginwith_mobile_number"
+        android:name="com.worksy.hr.art.views.fragments.login.LoginByMobileNumber"
+        android:label="fragment_login_by_mobile_number"
+        tools:layout="@layout/fragment_login_by_mobile_number">
+        <action android:id="@+id/action_navi_mobilenumber_to_register"
+            app:destination="@+id/navi_register"/>
+        <action android:id="@+id/action_navi_mobilenumber_to_forgotpassword"
+            app:destination="@+id/navi_resetpassword"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/navi_loginwith_email"
+        android:name="com.worksy.hr.art.views.fragments.login.LoginWithEmail"
+        android:label="fragment_login_with_email"
+        tools:layout="@layout/fragment_login_with_email">
+        <action android:id="@+id/action_navi_mobilenumber_to_register"
+            app:destination="@+id/navi_register"/>
+        <action android:id="@+id/action_navi_mobilenumber_to_forgotpassword"
+            app:destination="@+id/navi_resetpassword"/>
+    </fragment>
+    <fragment
+        android:id="@+id/navi_register"
+        android:name="com.worksy.hr.art.views.fragments.register.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register">
+
+    </fragment>
+    <fragment
+        android:id="@+id/navi_resetpassword"
+        android:name="com.worksy.hr.art.views.fragments.resetpassword.ResetPasswordFragment"
+        android:label="fragment_reset_password"
+        tools:layout="@layout/fragment_reset_password">
+        <action
+            android:id="@+id/action_resetpassword_to_otpverify"
+            app:destination="@id/navi_otpverify" />
+    </fragment>
+    <fragment
+        android:id="@+id/navi_otpverify"
+        android:name="com.worksy.hr.art.views.fragments.resetpassword.OtpVerifyFragment"
+        android:label="fragment_otp_verify"
+        tools:layout="@layout/fragment_otp_verify">
+        <action
+            android:id="@+id/action_otpverify_to_create_new_password"
+            app:destination="@id/navi_create_new_password" />
+    </fragment>
+    <fragment
+        android:id="@+id/navi_create_new_password"
+        android:name="com.worksy.hr.art.views.fragments.resetpassword.CreateNewPassword"
+        android:label="fragment_create_new_password"
+        tools:layout="@layout/fragment_create_new_password">
+        <action
+            android:id="@+id/action_create_new_password_to_otpverify"
+            app:destination="@id/navi_otpverify" />
+    </fragment>
+    <fragment
+        android:id="@+id/navi_home_permission_setup"
+        android:name="com.worksy.hr.art.views.fragments.permissionsetup.HomePermissionSetupFragment"
+        android:label="fragment_home_permission_setup"
+        tools:layout="@layout/fragment_home_permission_setup">
+        <action
+            android:id="@+id/action_home_permission_to_permission_setup"
+            app:destination="@id/navi_permission_setup" />
+        <action
+            android:id="@+id/action_home_permission_to_clock_setup"
+            app:destination="@id/navi_clock_setup" />
+        <action
+            android:id="@+id/action_home_permission_to_successful_setup"
+            app:destination="@id/navi_successful_setup" />
+    </fragment>
+    <fragment
+        android:id="@+id/navi_permission_setup"
+        android:name="com.worksy.hr.art.views.fragments.permissionsetup.PermissionSetUpFragment"
+        android:label="fragment_permission_set_up"
+        tools:layout="@layout/fragment_permission_set_up">
+    </fragment>
+    <fragment
+        android:id="@+id/navi_clock_setup"
+        android:name="com.worksy.hr.art.views.fragments.permissionsetup.ClockDeviceSetupFragment"
+        android:label="fragment_clock_device_setup"
+        tools:layout="@layout/fragment_clock_device_setup">
+    </fragment>
+    <fragment
+        android:id="@+id/navi_successful_setup"
+        android:name="com.worksy.hr.art.views.fragments.permissionsetup.SuccessfulSetupFragment"
+        android:label="fragment_successful_setup"
+        tools:layout="@layout/fragment_successful_setup">
+        <action
+            android:id="@+id/action_successful_setup_to_company_selection"
+            app:destination="@id/navi_company_selection" />
+    </fragment>
+    <fragment
+        android:id="@+id/navi_company_selection"
+        android:name="com.worksy.hr.art.views.fragments.companyselection.CompanySelectionFragment"
+        android:label="fragment_company_selection"
+        tools:layout="@layout/fragment_company_selection">
+    </fragment>
+</navigation>
